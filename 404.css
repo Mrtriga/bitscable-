@@ -1,0 +1,73 @@
+/* ==========================================================================
+   404 page — page-specific styles
+   Relies on shared tokens/utilities from style.css:
+   --ink, --accent, --accent-text, --teal, --bg,
+   .eyebrow, .btn-primary, .cta-group
+   ========================================================================== */
+
+.notfound {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.notfound__inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.notfound__art {
+  width: 160px;
+  margin: 0 auto 1.5rem;
+}
+
+.notfound__art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.notfound h1 {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  color: var(--ink);
+  margin: 0.75rem 0 1rem;
+  line-height: 1.25;
+}
+
+.notfound__sub {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--teal);
+  margin-bottom: 2rem;
+}
+
+.notfound__cta {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.notfound__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+
+.notfound__links-label {
+  color: var(--teal);
+}
+
+.notfound__links a {
+  color: var(--accent-text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.notfound__links a:hover {
+  border-bottom-color: var(--accent);
+}

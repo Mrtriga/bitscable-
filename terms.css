@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Terms of Service page — page-specific styles
+   Relies on shared tokens/utilities from style.css:
+   --ink, --accent, --accent-text, --teal, --bg, --font-sans,
+   .eyebrow, .page-intro, .reveal
+   ========================================================================== */
+
+.legal-updated {
+  color: var(--teal);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* Table of contents
+   ---------------------------------------------------------------------- */
+.legal-toc {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem;
+  background: var(--bg);
+  border-radius: 14px;
+}
+
+.legal-toc__heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+.legal-toc__list {
+  columns: 1;
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .legal-toc__list {
+    columns: 2;
+    column-gap: 2rem;
+  }
+}
+
+.legal-toc__list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.92rem;
+  break-inside: avoid;
+}
+
+.legal-toc__list a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.legal-toc__list a:hover {
+  color: var(--accent-text);
+  border-bottom-color: var(--accent);
+}
+
+/* Legal content
+   ---------------------------------------------------------------------- */
+.legal-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.legal-heading {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  scroll-margin-top: 90px; /* offset for sticky header when jumping via anchor */
+}
+
+.legal-block p {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--ink);
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block strong {
+  color: var(--ink);
+  opacity: 1;
+}
+
+.legal-list {
+  padding-left: 1.3rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.legal-list li {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--ink);
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.legal-contact {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(27, 31, 29, 0.1);
+  font-size: 0.95rem;
+  color: var(--teal);
+}
+
+.legal-contact a {
+  color: var(--accent-text);
+}

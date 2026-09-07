@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Privacy Policy page — incremental styles
+   Reuses .legal-toc / .legal-content / .legal-heading / .legal-block /
+   .legal-list / .legal-updated from css/terms.css (same legal-page pattern).
+   This file only adds what terms.css doesn't already define.
+   ========================================================================== */
+
+.legal-subheading {
+  font-size: 1.02rem;
+  color: var(--ink);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-block h3.legal-subheading:first-child {
+  margin-top: 0;
+}

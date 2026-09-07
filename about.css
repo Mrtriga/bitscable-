@@ -1,0 +1,313 @@
+/* ==========================================================================
+   About Page — page-specific styles
+   Relies on shared tokens/utilities from style.css:
+   --ink, --accent, --accent-text, --teal, --bg, --font-sans,
+   .eyebrow, .btn-primary, .reveal, .final-cta (reused as-is)
+   ========================================================================== */
+
+/* 1. Hero
+   ---------------------------------------------------------------------- */
+.about-hero {
+  padding: 6rem 1.5rem 4rem;
+  background-color: var(--bg);
+  text-align: center;
+}
+
+.about-hero__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin: 1rem 0 1.5rem;
+  color: var(--ink);
+}
+
+.about-hero h1 .accent-line {
+  display: block;
+  color: var(--accent-text);
+}
+
+.about-hero__sub {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--teal);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* 2. Mission
+   ---------------------------------------------------------------------- */
+.mission {
+  padding: 4rem 1.5rem;
+}
+
+.mission__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mission__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.mission__text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink);
+  opacity: 0.85;
+  margin-bottom: 1.25rem;
+}
+
+.mission__text:last-child {
+  margin-bottom: 0;
+}
+
+/* 3. The Right-Sized Approach
+   ---------------------------------------------------------------------- */
+.approach {
+  padding: 4rem 1.5rem;
+  background-color: var(--bg);
+}
+
+.approach__inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.approach__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.approach__sub {
+  text-align: center;
+  color: var(--teal);
+  max-width: 520px;
+  margin: 0 auto 2.5rem;
+}
+
+.approach__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .approach__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.approach-card {
+  background: #fff;
+  border: 1px solid rgba(27, 31, 29, 0.08);
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.approach-card__icon {
+  width: 44px;
+  height: 44px;
+  color: var(--accent-text);
+  margin-bottom: 1rem;
+}
+
+.approach-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.approach-card__title {
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.approach-card__text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink);
+  opacity: 0.85;
+}
+
+.approach__standard {
+  margin-top: 2rem;
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid var(--accent);
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+}
+
+.approach__standard p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.approach__standard strong {
+  color: var(--accent-text);
+}
+
+/* 4. Why Choose Us
+   ---------------------------------------------------------------------- */
+.differentiator {
+  padding: 4rem 1.5rem;
+}
+
+.differentiator__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.differentiator__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.differentiator__text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink);
+  opacity: 0.85;
+  margin-bottom: 1.25rem;
+}
+
+.differentiator__quote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--ink);
+  border-left: 4px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+/* 5. Our Values
+   ---------------------------------------------------------------------- */
+.values {
+  padding: 4rem 1.5rem;
+  background-color: var(--bg);
+}
+
+.values__inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.values__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.values__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .values__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.value-mini {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.value-mini__icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  color: var(--accent-text);
+}
+
+.value-mini__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.value-mini__title {
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.value-mini__text {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--ink);
+  opacity: 0.8;
+}
+
+/* 6. Meet the Founder
+   ---------------------------------------------------------------------- */
+.founder {
+  padding: 4rem 1.5rem;
+}
+
+.founder__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.founder__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.founder__card {
+  background: var(--bg);
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.founder__card .founder__text {
+  margin-bottom: 1rem;
+}
+
+.founder__card .founder__text:last-child {
+  margin-bottom: 0;
+}
+
+.founder__avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px dashed var(--teal);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.founder__avatar svg {
+  width: 100%;
+  height: 100%;
+}
+
+.founder__text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--ink);
+  opacity: 0.9;
+}
+

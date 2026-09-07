@@ -1,0 +1,639 @@
+/* ---------- Team Training: Hero ---------- */
+
+.tt-hero {
+  padding: 4rem 1.5rem 3rem;
+}
+
+.tt-hero__inner {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-hero__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(2.1rem, 5.5vw, 3.5rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 1rem 0 1.25rem;
+}
+
+.tt-hero__sub {
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  color: #4a4a4a;
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.tt-hero .cta-group {
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.tt-hero__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.tt-hero__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  background: #fff;
+  min-width: 110px;
+}
+
+.tt-hero__step-num {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-text);
+}
+
+.tt-hero__step-label {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tt-hero__step-arrow {
+  width: 28px;
+  height: 1px;
+  background: #d5d5d5;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tt-hero__step-arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+@media (max-width: 640px) {
+  .tt-hero__steps { flex-direction: column; }
+  .tt-hero__step-arrow { width: 1px; height: 20px; }
+  .tt-hero__step-arrow::after {
+    right: 50%;
+    top: 0;
+    transform: translateX(50%) rotate(45deg);
+  }
+}
+
+/* ---------- Team Training: The Problem ---------- */
+
+.tt-problem {
+  padding: 4rem 1.5rem;
+  background-color: #FFFFFF;
+}
+
+.tt-problem__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.tt-problem__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tt-problem__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tt-problem__list li {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  padding: 0.9rem 1rem 0.9rem 2.25rem;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  position: relative;
+}
+
+.tt-problem__list li::before {
+  content: "—";
+  position: absolute;
+  left: 1rem;
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+.tt-problem__closing {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+main.tt-page {
+  flex-direction: column;
+}
+/* ---------- Team Training: What We Train ---------- */
+
+.tt-training {
+  padding: 4rem 1.5rem;
+}
+
+.tt-training__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-training__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0.75rem 0 2.5rem;
+}
+
+.tt-training__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.tt-training__item {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 1.5rem;
+  background: #fff;
+  transition: border-color 0.15s ease;
+}
+
+.tt-training__item:hover {
+  border-color: var(--accent);
+}
+
+.tt-training__item h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.tt-training__item p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .tt-training__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .tt-training__grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Team Training: Role-Based Training ---------- */
+
+.tt-roles {
+  padding: 4rem 1.5rem;
+  background-color: #FFFFFF;
+}
+
+.tt-roles__inner {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-roles__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+
+.tt-roles__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.tt-roles__tab {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  cursor: pointer;
+}
+
+.tt-roles__tab.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.tt-roles__topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.tt-roles__topics li {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--accent-text);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+/* ---------- Team Training: How We Train ---------- */
+
+.tt-how {
+  padding: 4rem 1.5rem;
+  background-color: #FFFFFF;
+}
+
+.tt-how__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-how__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0.75rem 0 2.5rem;
+}
+
+.tt-how__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.tt-how__step {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 1.5rem;
+  background: var(--bg);
+}
+
+.tt-how__num {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-text);
+  margin-bottom: 0.75rem;
+}
+
+.tt-how__step h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.tt-how__step p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .tt-how__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .tt-how__grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Team Training: Custom Training ---------- */
+
+.tt-custom {
+  padding: 4rem 1.5rem;
+}
+
+.tt-custom__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-custom__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0.75rem 0 2rem;
+}
+
+.tt-custom__factors {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.tt-custom__factors li {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+}
+
+.tt-custom__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.tt-custom__card {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 1.5rem;
+  background: #fff;
+  border-top: 3px solid var(--accent);
+}
+
+.tt-custom__card h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.tt-custom__card p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .tt-custom__grid { grid-template-columns: 1fr; }
+}
+/* ---------- Team Training: Process (reuses .wd-process, minor override) ---------- */
+
+.tt-process .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Team Training: Outcomes ---------- */
+
+.tt-outcomes {
+  padding: 4rem 1.5rem;
+  background-color: #FFFFFF;
+}
+
+.tt-outcomes__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-outcomes__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0.75rem 0 2.5rem;
+}
+
+.tt-outcomes__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.tt-outcomes__item {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 1.5rem;
+  background: var(--bg);
+}
+
+.tt-outcomes__item h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  margin-bottom: 0.5rem;
+}
+
+.tt-outcomes__item p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .tt-outcomes__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .tt-outcomes__grid { grid-template-columns: 1fr; }
+}
+/* ---------- Team Training: Why BitsCable ---------- */
+
+.tt-why {
+  padding: 4rem 1.5rem;
+  background-color: #FFFFFF;
+}
+
+.tt-why__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tt-why__heading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0.75rem 0 2rem;
+}
+
+.tt-why__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.tt-why__list li {
+  font-size: 1rem;
+  color: #333;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.tt-why__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+/* ---------- Team Training: Final CTA ---------- */
+
+.tt-final-cta {
+  padding: 5rem 1.5rem;
+  background-color: var(--ink);
+  text-align: center;
+}
+
+.tt-final-cta__inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.tt-final-cta__inner h2 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.tt-final-cta__inner p {
+  font-size: 1rem;
+  color: #cfcfcf;
+  margin-bottom: 2rem;
+}
+
+.tt-final-cta .cta-group {
+  justify-content: center;
+}
+/* ---------- Team Training: FAQ accordion (scoped override — base
+   .service-faq is a static list elsewhere on the site) ---------- */
+
+.tt-faq .service-faq__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.tt-faq .service-faq__item:first-child {
+  border-top: 1px solid #ececec;
+}
+
+.tt-faq .service-faq__q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 1.1rem 0;
+  font-family: var(--font-sans);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.tt-faq .service-faq__icon {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--accent-text);
+  transition: transform 0.15s ease;
+}
+
+.tt-faq .service-faq__item.is-open .service-faq__icon {
+  transform: rotate(45deg);
+}
+
+.tt-faq .service-faq__a {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 1;
+  transition: grid-template-rows 0.2s ease;
+}
+
+.tt-faq .service-faq__a p {
+  overflow: hidden;
+  min-height: 0;
+  padding-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.tt-faq .service-faq__item.is-open .service-faq__a {
+  grid-template-rows: 1fr;
+}
+
+.tt-faq .service-faq__item.is-open .service-faq__a p {
+  padding-bottom: 1.1rem;
+}
+
+.tt-faq .service-faq__a > * {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tt-faq .service-faq__a { transition: none; }
+}
