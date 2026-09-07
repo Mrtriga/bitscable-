@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Maintenance — Bitscable</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="description" content="Ongoing website maintenance from Bitscable — content updates, technical fixes, performance and security checks, so your site keeps working like part of your business.">
+<link rel="canonical" href="https://bitscable.com/website-maintenance.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Website Maintenance — Bitscable">
+<meta property="og:description" content="Ongoing website maintenance from Bitscable — content updates, technical fixes, performance and security checks, so your site keeps working like part of your business.">
+<meta property="og:url" content="https://bitscable.com/website-maintenance.html">
+<meta property="og:image" content="https://bitscable.com/images/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website Maintenance — Bitscable">
+<meta name="twitter:description" content="Ongoing website maintenance from Bitscable — content updates, technical fixes, performance and security checks, so your site keeps working like part of your business.">
+<meta name="twitter:image" content="https://bitscable.com/images/logo.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/website-maintenance.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Website Maintenance",
+  "provider": { "@type": "Organization", "name": "Bitscable", "url": "https://bitscable.com/" },
+  "url": "https://bitscable.com/website-maintenance.html",
+  "description": "Ongoing website maintenance from Bitscable — content updates, technical fixes, performance and security checks, so your site keeps working like part of your business."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bitscable.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://bitscable.com/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "Website Maintenance", "item": "https://bitscable.com/website-maintenance.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Can you maintain a website you didn't build?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, subject to being able to access and work with its existing technology." } },
+    { "@type": "Question", "name": "Do I need a maintenance plan?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. The right approach depends on how often the website changes and how technically complex it is." } },
+    { "@type": "Question", "name": "Can you update text and images?", "acceptedAnswer": { "@type": "Answer", "text": "Yes." } },
+    { "@type": "Question", "name": "Can you fix a broken website?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, where the issue is within the website and the systems we can access. We'll identify external dependencies when relevant." } },
+    { "@type": "Question", "name": "Can you maintain WordPress websites?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, where appropriate access is available." } },
+    { "@type": "Question", "name": "Will maintenance improve my SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Maintenance can protect technical SEO health, but maintenance itself isn't a substitute for a <a href="/seo-services.html">dedicated SEO strategy</a>." } },
+    { "@type": "Question", "name": "Can you tell me if my website needs a redesign instead?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If maintenance would simply keep an outdated experience alive, we'll say so." } }
+  ]
+}
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a96efee48aed53444d9a6e3/1k1epif4m';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</head>
+<body>
+<div class="noise"></div>
+
+<header>
+  <a href="/index.html" class="logo">
+    <img src="images/logo.png" alt="Bitscable" class="logo-img">
+    <span class="logo-text">BitsCable</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="/index.html">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
+  <div class="header-right">
+    <a href="/contact.html" class="btn-primary small">Get a quote</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="wm-page">
+
+<!-- ============================================
+     SECTION 1 — HERO / WEBSITE HEALTH DIAGNOSTIC
+     Reason: replaces the generic "we update your site" hero with a live-
+     looking health-check panel — sets the page's whole framing (health,
+     not chores) before any copy explains it.
+     ============================================ -->
+<section class="wm-hero" aria-labelledby="wm-hero-heading">
+  <div class="wm-hero__inner">
+    <div class="wm-hero__copy">
+      <div class="eyebrow">Website Maintenance</div>
+      <h1 id="wm-hero-heading" class="wm-hero__heading">A website shouldn't need rescuing every few months.</h1>
+      <p class="wm-hero__sub">Your website shouldn't slowly break while you're busy running your business. Bitscable keeps it updated, secure, responsive and ready for customers — from routine content changes to technical fixes and performance checks.</p>
+      <div class="cta-group">
+        <a href="/contact.html" class="btn-primary">Keep My Website Healthy</a>
+        <a href="#wm-matrix" class="btn-ghost">See What's Covered ↓</a>
+      </div>
+    </div>
+
+    <div class="wm-panel" aria-hidden="true">
+      <div class="wm-panel__head">
+        <span>WEBSITE / HEALTH CHECK</span>
+      </div>
+      <ul class="wm-panel__list">
+        <li><span>CONTENT</span><em class="wm-dot" data-delay="0">CURRENT</em></li>
+        <li><span>MOBILE</span><em class="wm-dot" data-delay="1">RESPONSIVE</em></li>
+        <li><span>SECURITY</span><em class="wm-dot" data-delay="2">PROTECTED</em></li>
+        <li><span>PERFORMANCE</span><em class="wm-dot" data-delay="3">98</em></li>
+        <li><span>LINKS</span><em class="wm-dot" data-delay="4">CHECKED</em></li>
+        <li><span>SEO STRUCTURE</span><em class="wm-dot" data-delay="5">HEALTHY</em></li>
+      </ul>
+      <div class="wm-panel__foot">
+        <div class="wm-panel__last">LAST CHECK<br><strong>Today · 09:42</strong></div>
+        <div class="wm-panel__tally">
+          <span>03 <small>ROUTINE TASKS</small></span>
+          <span>01 <small>IMPROVEMENT</small></span>
+          <span>00 <small>CRITICAL ISSUES</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 2 — WEBSITES DON'T FAIL ALL AT ONCE
+     Reason: reframes maintenance as prevention, using a diagnostic-log
+     scroll reveal instead of a standard "why it matters" paragraph.
+     ============================================ -->
+<section class="wm-statement" aria-labelledby="wm-statement-heading">
+  <div class="wm-statement__inner">
+    <h2 id="wm-statement-heading" class="wm-statement__heading">Websites don't usually fail all at once.</h2>
+    <p class="wm-statement__lead">A broken form. An outdated plugin. A missing image. A mobile layout that stopped behaving. A page that became painfully slow. A security setting nobody checked.</p>
+
+    <ul class="wm-log" role="list">
+      <li class="reveal reveal-d1">01 / BROKEN LINK</li>
+      <li class="reveal reveal-d2">02 / OUTDATED CONTENT</li>
+      <li class="reveal reveal-d3">03 / MOBILE ISSUE</li>
+      <li class="reveal reveal-d4">04 / PERFORMANCE DROP</li>
+    </ul>
+
+    <p class="wm-statement__result reveal reveal-d5">Maintenance catches the small problems before they become expensive ones.</p>
+    <p class="wm-statement__flow reveal reveal-d6">MAINTAINED <span aria-hidden="true">→</span> MONITORED <span aria-hidden="true">→</span> IMPROVED</p>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 3 — WHAT MAINTENANCE ACTUALLY MEANS (MATRIX)
+     Reason: a scanning row-matrix demonstrates real scope knowledge
+     instead of a generic 3-card "our services" layout.
+     ============================================ -->
+<section class="wm-matrix" id="wm-matrix" aria-labelledby="wm-matrix-heading">
+  <div class="wm-matrix__inner">
+    <h2 id="wm-matrix-heading" class="wm-matrix__heading">What maintenance actually means</h2>
+    <p class="wm-matrix__sub">These are the areas we actually look after — not a generic checklist.</p>
+
+    <div class="wm-matrix__table" role="table">
+      <div class="wm-matrix__row wm-matrix__row--head" role="row">
+        <span role="columnheader">Area</span>
+        <span role="columnheader">What we look after</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d1" role="row">
+        <span role="cell">Content</span><span role="cell">Text, images, pages, announcements</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d2" role="row">
+        <span role="cell">Technical</span><span role="cell">Broken links, layout bugs, browser issues</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d3" role="row">
+        <span role="cell">Mobile</span><span role="cell">Responsive behaviour across screen sizes</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d4" role="row">
+        <span role="cell">Performance</span><span role="cell">Images, scripts, page weight and loading</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d5" role="row">
+        <span role="cell">Security</span><span role="cell">HTTPS, security headers and configuration checks</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d6" role="row">
+        <span role="cell">SEO Health</span><span role="cell">Metadata, indexing structure, broken links</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d1" role="row">
+        <span role="cell">Forms</span><span role="cell">Contact/lead forms and validation</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d2" role="row">
+        <span role="cell">Compatibility</span><span role="cell">Browser/device behaviour</span>
+      </div>
+      <div class="wm-matrix__row reveal reveal-d3" role="row">
+        <span role="cell">Visual QA</span><span role="cell">Spacing, typography and layout consistency</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 4 — FIX / UPDATE / IMPROVE (interactive)
+     Reason: tap-driven mode switch is a stronger interaction than another
+     hover card, and gives visitors self-service framing for their need.
+     ============================================ -->
+<section class="wm-modes" aria-labelledby="wm-modes-heading">
+  <div class="wm-modes__inner">
+    <h2 id="wm-modes-heading" class="wm-modes__heading">Not every website needs the same kind of attention.</h2>
+
+    <div class="wm-modes__tabs" role="tablist" aria-label="Maintenance modes">
+<button class="wm-modes__tab is-active" role="tab" aria-selected="true" data-mode="fix" onclick="alert('js works')">FIX</button>
+      <button class="wm-modes__tab" role="tab" aria-selected="false" data-mode="update">UPDATE</button>
+      <button class="wm-modes__tab" role="tab" aria-selected="false" data-mode="improve">IMPROVE</button>
+    </div>
+
+    <div class="wm-modes__panel">
+      <div class="wm-modes__content is-active" data-mode-panel="fix">
+        <h3>Something is broken.</h3>
+        <p>Broken layout, links, forms, images, mobile issues, browser problems.</p>
+      </div>
+      <div class="wm-modes__content" data-mode-panel="update">
+        <h3>Something changed.</h3>
+        <p>New content, services, products, images, pages, announcements.</p>
+      </div>
+      <div class="wm-modes__content" data-mode-panel="improve">
+        <h3>Something could work better.</h3>
+        <p>Performance, usability, SEO structure, conversion paths and accessibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 5 — WHAT WE CAN ACTUALLY DO
+     Reason: reuses the shared "service-included" deliverables-grid pattern
+     already used on other pages, grouped into four honest categories.
+     ============================================ -->
+<section class="service-included" aria-labelledby="wm-included-heading">
+  <div class="service-included__inner">
+    <h2 id="wm-included-heading" class="service-included__heading">What we can actually do</h2>
+    <p class="service-included__sub">Grouped by the kind of attention each one needs.</p>
+
+    <div class="wm-included__groups">
+      <div class="wm-included__group reveal reveal-d1">
+        <h3>Routine website care</h3>
+        <div class="service-included__grid wm-included__grid">
+          <span>Content updates</span>
+          <span>Image replacement</span>
+          <span>Page additions</span>
+          <span>Text corrections</span>
+          <span>Link updates</span>
+          <span>Navigation changes</span>
+          <span>CTA updates</span>
+          <span>Business information changes</span>
+        </div>
+      </div>
+
+      <div class="wm-included__group reveal reveal-d2">
+        <h3>Technical maintenance</h3>
+        <div class="service-included__grid wm-included__grid">
+          <span>Broken layout fixes</span>
+          <span>Mobile responsiveness fixes</span>
+          <span>Browser compatibility issues</span>
+          <span>Broken links</span>
+          <span>Form troubleshooting</span>
+          <span>JavaScript errors</span>
+          <span>CSS issues</span>
+          <span>Image/display problems</span>
+        </div>
+      </div>
+
+      <div class="wm-included__group reveal reveal-d3">
+        <h3>Performance maintenance</h3>
+        <div class="service-included__grid wm-included__grid">
+          <span>Image optimization</span>
+          <span>Lazy-loading checks</span>
+          <span>Reducing unnecessary scripts</span>
+          <span>Asset optimization</span>
+          <span>Core Web Vitals review</span>
+          <span>Lighthouse checks</span>
+        </div>
+      </div>
+
+      <div class="wm-included__group reveal reveal-d4">
+        <h3>Security maintenance</h3>
+        <div class="service-included__grid wm-included__grid">
+          <span>HTTPS/TLS verification</span>
+          <span>Security-header checks</span>
+          <span>CSP review</span>
+          <span>X-Frame-Options</span>
+          <span>Referrer-Policy</span>
+          <span>Permissions-Policy</span>
+          <span>Dependency/plugin review where applicable</span>
+          <span>Spam protection checks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 6 — BEFORE IT BECOMES A PROBLEM (timeline)
+     Reason: shows the business cost of neglect, then reverses it into the
+     maintenance flow — communicates value without fake ROI numbers.
+     ============================================ -->
+<section class="wm-timeline" aria-labelledby="wm-timeline-heading">
+  <div class="wm-timeline__inner">
+    <h2 id="wm-timeline-heading" class="wm-timeline__heading">Most website problems have a beginning.</h2>
+
+    <div class="wm-timeline__before">
+      <span class="reveal reveal-d1">Looks fine</span>
+      <span class="reveal reveal-d2">Small issue</span>
+      <span class="reveal reveal-d3">Nobody notices</span>
+      <span class="reveal reveal-d4">Customer encounters it</span>
+      <span class="reveal reveal-d5">Lost enquiry</span>
+      <span class="reveal reveal-d6">Emergency fix</span>
+    </div>
+
+    <div class="wm-timeline__break reveal">
+      <span>Maintenance</span>
+    </div>
+
+    <div class="wm-timeline__after">
+      <span class="reveal reveal-d1">Check</span>
+      <span class="reveal reveal-d2">Detect</span>
+      <span class="reveal reveal-d3">Fix</span>
+      <span class="reveal reveal-d4">Improve</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 7 — OUR MAINTENANCE PROCESS
+     Reason: reuses the site's existing numbered circular-timeline pattern
+     (wd-process) already established on Website Design.
+     ============================================ -->
+<section class="wd-process" aria-labelledby="wm-process-heading">
+  <div class="wd-process__inner">
+    <h2 id="wm-process-heading" class="wd-process__heading">What happens when you hand us your website?</h2>
+    <p class="wd-process__sub">A real process, not a vague promise to "keep things updated."</p>
+
+    <div class="wd-process__timeline">
+      <div class="wd-process__step reveal reveal-d1">
+        <span class="wd-process__num">01</span>
+        <div><h3>We inspect</h3><p>We review the website, its structure, mobile behaviour, forms, links and technical condition.</p></div>
+      </div>
+      <div class="wd-process__step reveal reveal-d2">
+        <span class="wd-process__num">02</span>
+        <div><h3>We identify</h3><p>We separate routine updates from actual technical problems.</p></div>
+      </div>
+      <div class="wd-process__step reveal reveal-d3">
+        <span class="wd-process__num">03</span>
+        <div><h3>We prioritize</h3><p>Not every issue deserves the same urgency.</p></div>
+      </div>
+      <div class="wd-process__step reveal reveal-d4">
+        <span class="wd-process__num">04</span>
+        <div><h3>We fix</h3><p>We handle the approved changes without unnecessarily rebuilding working sections.</p></div>
+      </div>
+      <div class="wd-process__step reveal reveal-d5">
+        <span class="wd-process__num">05</span>
+        <div><h3>We test</h3><p>Desktop. Mobile. Different viewport sizes. Links. Forms. Key interactions.</p></div>
+      </div>
+      <div class="wd-process__step reveal reveal-d6">
+        <span class="wd-process__num">06</span>
+        <div><h3>We report</h3><p>You know what changed and what still needs attention.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 8 — WHAT WE DON'T DO
+     Reason: honesty section — builds trust by naming the limits of a
+     static-site maintenance service instead of overselling.
+     ============================================ -->
+<section class="wm-limits" aria-labelledby="wm-limits-heading">
+  <div class="wm-limits__inner">
+    <h2 id="wm-limits-heading" class="wm-limits__heading">Maintenance doesn't mean pretending we can fix everything.</h2>
+     <div class="wd-process__step reveal reveal-d6">
+        <span class="wd-process__num">06</span>
+        <div><h3>We report</h3><p>You know what changed and what still needs attention.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 8 — WHAT WE DON'T DO
+     Reason: honesty section — builds trust by naming the limits of a
+     static-site maintenance service instead of overselling.
+     ============================================ -->
+<section class="wm-limits" aria-labelledby="wm-limits-heading">
+  <div class="wm-limits__inner">
+    <h2 id="wm-limits-heading" class="wm-limits__heading">Maintenance doesn't mean pretending we can fix everything.</h2>
+    <p class="wm-limits__text">If your website depends on a third-party service, hosting platform, plugin, payment provider or backend system, we'll identify what is within our access and what requires the provider or developer responsible for that system.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 9 — ALREADY HAVE A WEBSITE?
+     Reason: targets existing-business owners directly with three honest
+     routes instead of a single generic CTA.
+     ============================================ -->
+<section class="wm-routes" aria-labelledby="wm-routes-heading">
+  <div class="wm-routes__inner">
+    <h2 id="wm-routes-heading" class="wm-routes__heading">You don't necessarily need a new website.</h2>
+    <p class="wm-routes__sub">Sometimes you just need someone to take care of the one you already have.</p>
+<div class="wm-routes__grid">
+      <div class="wm-routes__card reveal reveal-d1">
+        <h3>KEEP IT</h3>
+        <p>Your site works. We maintain it.</p>
+      </div>
+      <div class="wm-routes__card reveal reveal-d2">
+        <h3>FIX IT</h3>
+        <p>Something isn't working. We diagnose and repair it.</p>
+      </div>
+      <div class="wm-routes__card reveal reveal-d3">
+        <h3>IMPROVE IT</h3>
+        <p>It works, but it could perform better.</p>
+      </div>
+    </div>
+
+    <p class="wm-routes__note reveal">If maintenance turns into a <a href="/website-redesign.html">redesign</a>, we'll tell you. We won't sell you one unnecessarily.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 10 — EXAMPLE WEBSITE HEALTH CHECK
+     Reason: labelled explicitly as an example, not a real client result —
+     avoids implying proof the page doesn't have (same rule applied on
+     the E-commerce page's proof section).
+     ============================================ -->
+<section class="wm-dashboard" aria-labelledby="wm-dashboard-heading">
+  <div class="wm-dashboard__inner">
+    <h2 id="wm-dashboard-heading" class="wm-dashboard__heading">Example maintenance check</h2>
+    <p class="wm-dashboard__sub">An illustration of what a health check looks like — not a real client's results.</p>
+
+    <div class="wm-dashboard__panel">
+      <div class="wm-dashboard__head">BITSCABLE / WEBSITE CHECK</div>
+      <ul class="wm-dashboard__list">
+        <li><span>PERFORMANCE</span><strong>98</strong></li>
+        <li><span>MOBILE</span><strong>READY</strong></li>
+        <li><span>SECURITY</span><strong>ACTIVE</strong></li>
+        <li><span>SEO STRUCTURE</span><strong>HEALTHY</strong></li>
+        <li><span>BROKEN LINKS</span><strong>0</strong></li>
+        <li><span>LAYOUT ISSUES</span><strong>0</strong></li>
+      </ul>
+      <div class="wm-dashboard__foot">
+        <span>LAST REVIEW<br><strong>26 AUG 2026</strong></span>
+        <span class="wm-dashboard__status">WEBSITE HEALTHY</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 11 — MAINTENANCE FOR DIFFERENT SITUATIONS
+     Reason: targets real situations business owners recognize, instead of
+     a generic industry grid.
+     ============================================ -->
+<section class="wm-situations" aria-labelledby="wm-situations-heading">
+  <div class="wm-situations__inner">
+    <h2 id="wm-situations-heading" class="wm-situations__heading">Maintenance for different situations</h2>
+
+    <div class="wm-situations__grid">
+      <div class="wm-situations__item reveal reveal-d1"><h3>You just launched</h3><p>Keep everything stable after launch.</p></div>
+      <div class="wm-situations__item reveal reveal-d2"><h3>Your website is a few years old</h3><p>Fix accumulated problems and keep it usable.</p></div>
+      <div class="wm-situations__item reveal reveal-d3"><h3>Your team doesn't have a developer</h3><p>Have someone handle the technical side.</p></div>
+      <div class="wm-situations__item reveal reveal-d4"><h3>Your website changes frequently</h3><p>Keep content and functionality current.</p></div>
+      <div class="wm-situations__item reveal reveal-d5"><h3>Your old developer disappeared</h3><p>We can inspect the existing site before recommending what happens next.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 12 — FAQ
+     Reason: reuses the shared service-faq pattern already used on every
+     other service page, with 7 direct, honest answers.
+     ============================================ -->
+<section class="service-faq" aria-labelledby="wm-faq-heading">
+  <div class="service-faq__inner">
+    <h2 id="wm-faq-heading" class="service-faq__heading">Common questions</h2>
+    <div class="service-faq__list">
+      <div class="service-faq__item reveal reveal-d1">
+        <p class="service-faq__q">Can you maintain a website you didn't build?</p>
+        <p class="service-faq__a">Yes, subject to being able to access and work with its existing technology.</p>
+      </div>
+      <div class="service-faq__item reveal reveal-d2">
+        <p class="service-faq__q">Do I need a maintenance plan?</p>
+        <p class="service-faq__a">Not necessarily. The right approach depends on how often the website changes and how technically complex it is.</p>
+      </div>
+      <div class="service-faq__item reveal reveal-d3">
+        <p class="service-faq__q">Can you update text and images?</p>
+        <p class="service-faq__a">Yes.</p>
+      </div>
+      <div class="service-faq__item reveal reveal-d4">
+        <p class="service-faq__q">Can you fix a broken website?</p>
+        <p class="service-faq__a">Yes, where the issue is within the website and the systems we can access. We'll identify external dependencies when relevant.</p>
+      </div>
+      <div class="service-faq__item reveal reveal-d5">
+        <p class="service-faq__q">Can you maintain WordPress websites?</p>
+        <p class="service-faq__a">Yes, where appropriate access is available.</p>
+      </div>
+      <div class="service-faq__item reveal reveal-d6">
+        <p class="service-faq__q">Will maintenance improve my SEO?</p>
+        <p class="service-faq__a">Maintenance can protect technical SEO health, but maintenance itself isn't a substitute for a dedicated SEO strategy.</p>
+      </div>
+      <div class="service-faq__item reveal reveal-d1">
+        <p class="service-faq__q">Can you tell me if my website needs a redesign instead?</p>
+        <p class="service-faq__a">Yes. If maintenance would simply keep an outdated experience alive, we'll say so.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 13 — CROSS-SELL
+     Reason: connects the maintenance page to the two other services that
+     actually solve a different problem, instead of dead-ending here.
+     ============================================ -->
+<section class="wm-crosssell" aria-labelledby="wm-crosssell-heading">
+  <div class="wm-crosssell__inner">
+    <h2 id="wm-crosssell-heading" class="wm-crosssell__heading">Sometimes the problem isn't maintenance.</h2>
+    <div class="wm-crosssell__grid">
+      <a href="/website-redesign.html" class="wm-crosssell__card reveal reveal-d1">
+        <h3>Website Redesign</h3>
+        <p>When the structure or experience needs a rethink.</p>
+      </a>
+      <a href="/seo-services.html" class="wm-crosssell__card reveal reveal-d2">
+        <h3>SEO Services</h3>
+        <p>When the website is healthy but isn't getting enough search visibility.</p>
+      </a>
+      <a href="/website-design.html" class="wm-crosssell__card reveal reveal-d3">
+        <h3>Website Design</h3>
+        <p>When you're starting from scratch.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 14 — FINAL CTA
+     Reason: closes on a memorable, specific statement rather than a
+     generic "ready to maintain your website?" line.
+     ============================================ -->
+<section class="wm-closing" aria-labelledby="wm-closing-heading">
+  <div class="wm-closing__inner">
+    <h2 id="wm-closing-heading" class="wm-closing__heading">Your website is working right now.<br>Let's keep it that way.</h2>
+    <p class="wm-closing__text">Tell us what your website needs. We'll tell you what actually needs doing — and what doesn't.</p>
+    <div class="cta-group" style="justify-content:center;">
+      <a href="/contact.html" class="btn-primary">Request Maintenance</a>
+      <a href="/contact.html" class="btn-ghost">Ask Us to Check My Website</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-group">
+      <h4>Get in Touch</h4>
+      <div class="icon-row">
+        <a href="mailto:info@bitscable.com" class="icon-btn icon-email" aria-label="Email Bitscable">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:+19179202062" class="icon-btn icon-call" aria-label="Call Bitscable">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="sms:+19179202062" class="icon-btn icon-text" aria-label="Text Bitscable">
+          <i class="fa-solid fa-comment-sms"></i>
+        </a>
+        <a href="https://wa.me/2347062023814" target="_blank" rel="noopener noreferrer" class="icon-btn icon-whatsapp" aria-label="WhatsApp Bitscable">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/bitscable?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="icon-btn icon-facebook" aria-label="Bitscable on Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/bitscable_" target="_blank" rel="noopener noreferrer" class="icon-btn icon-instagram" aria-label="Bitscable on Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-group">
+      <h4>Legal</h4>
+      <div class="link-row">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <img src="images/logo.png" alt="Bitscable" class="logo-img footer-logo">
+    <p>&copy; <span id="year">2026</span> Bitscable. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/website-maintenance.js"></script>
+</body>
+</html>
